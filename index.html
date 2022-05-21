@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de masse corporelle</title>
+</head>
+<body>
+    <script>
+        let poids,taille,imc;
+        poids=prompt("Entrez votre poids");
+        taille=prompt("Entrer votre taille en metre");
+        taille=taille*taille;
+        imc=poids/taille;
+        if(imc<=40 || imc<50){
+            alert("sous poids");
+        }else if(imc<=50 || imc<60){
+            alert("poids idéal");
+        }else if(imc<=60 || imc<70){
+            alert("surpoids");
+        }else if(imc<=70 || imc<80){
+            alert("faible obésité");
+        }else if(imc<=80 || imc<90){
+            alert("obésité moyenne");
+        }else if(imc<=90 || imc<130){
+            alert("obésité sévère")
+        }
+        else{
+            alert("veuillez consulter un medecin")
+        }
+    </script>
+</body>
+</html>
